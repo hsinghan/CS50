@@ -41,7 +41,7 @@ int main()
 }
 
 bool CardLengthIsValid(long long ccn){
-	
+	// get the length of ccn
 	int n = (int)log10(ccn)+1;
 	if (n == 13 || n == 15 || n == 16)
 	{
