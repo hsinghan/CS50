@@ -37,8 +37,7 @@ int main(int argc, string argv[]){
 
 char* EncrytedString(string message, int k){
     
-    string  ciphertext = message; // create the new string whose size is equal to the message string.
-
+    string  ciphertext = message; // create a placeholder variable, allocating the size using equal length of plain
     for (int i = 0; i < strlen(message); i++)
     {
         // check the char is alphabet or not.
@@ -49,13 +48,13 @@ char* EncrytedString(string message, int k){
             else
                 ciphertext[i] = ((message[i]+k - 'a')% 26) + 'a';
         }
-        else
-        {
-            // Do not changed.
-             ciphertext[i] = message[i];
-        }
+//      else
+//         {
+//             // Do not need to change if the letter is not alphabet.
+//              ciphertext[i] = message[i];
+//         }
 
     }
-    // return the memory address of ciphertext
+    // return  ciphertext
     return ciphertext;
 }
