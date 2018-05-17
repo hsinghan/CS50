@@ -56,6 +56,6 @@ char* EncrytedString(string message, int k){
         }
 
     }
-
+    // return the memory address of ciphertext
     return ciphertext;
 }
